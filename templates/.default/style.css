@@ -1,0 +1,88 @@
+/*
+.documents {
+    padding: 0 15px;
+}
+
+.documents .item {
+    background-color: #fcfcfc;
+    border: 1px solid #dedede;
+    padding: 16px 16px 32px 16px;
+}
+
+.documents .titile {
+    margin: 4px 0 8px 0;
+}
+
+.documents .description {
+    color: #B6B6B6;
+}
+
+.documents .link {
+    display: block;
+    margin-top: 16px;
+    position: relative;
+    padding-left: calc(32px + 8px);
+}
+
+.documents .link:hover .icon {
+    top: -4px;
+    transition: 0.4s all;
+}
+
+.documents .link .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 32px;
+    width: 32px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.2s all;
+}
+
+.documents .link .file-name,
+.documents .link .file-size {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.documents .link .file-name{
+    font-size: 16px;
+}
+
+.documents .link .file-size{
+    font-size: 12px;
+}
+*/
+
+.documents {
+    padding: 0 15px;
+}
+
+.documents .item .file-extension,
+.documents .item .link-download {
+    padding: 15px 20px;
+    border: 1px solid #e9eaed;
+    border-radius: 4px;
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+}
+
+.documents .item .file-extension {
+    color: #979498;
+}
+
+.documents .item .link-download {
+    color: #fff;
+    background-color: #b7a998;
+}
+
+.documents .link-view {
+    color: #e65100;
+}
+.documents .link-view .file-size {
+    color: #cacccc;
+}
+
