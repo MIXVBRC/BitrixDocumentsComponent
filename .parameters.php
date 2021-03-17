@@ -14,7 +14,7 @@ while ($obResult = $dbResult->Fetch())
 $arComponentParameters = [
 	"GROUPS" => [
         "SETTINGS" => [
-            "NAME" => "Настройки",
+            "NAME" => GetMessage("GROUPS_SETTINGS_NAME"),
             "SORT" => 100
         ]
 	],
@@ -22,7 +22,7 @@ $arComponentParameters = [
         // Настройки связанных элементов
         "IBLOCK_ID" => [
             "PARENT" => "SETTINGS",
-            "NAME" => "ID инфоблока",
+            "NAME" => GetMessage("GROUPS_IBLOCK_ID_NAME"),
             "TYPE" => "LIST",
             "ADDITIONAL_VALUES" => "N",
             "VALUES" => $arIBlock,
