@@ -28,6 +28,7 @@ $arComponentParameters = [
             "VALUES" => $arIBlock,
             "REFRESH" => "Y",
             "SORT" => 100
-        ]
+        ],
+        "CACHE_TIME" => ["DEFAULT" => 36000000], // CACHE_SETTINGS to PARENT
 	]
 ];
