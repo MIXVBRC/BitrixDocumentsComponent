@@ -12,7 +12,8 @@ function getFileSize($size)
         GetMessage("SIZE_GBYTE"),
     ];
 
-    for ($num = 0; $size > 1024; $num++) {
+    $num = 0;
+    for (; $size > 1024; $num++) {
         $size = $size / 1024;
 
         if ($num >= count($arSize))
@@ -29,6 +30,7 @@ if ($arParams["ID"] <= 0)
 
 if(!isset($arParams["CACHE_TIME"])) $arParams["CACHE_TIME"] = 36000000;
 
+global $USER;
 if ($this->StartResultCache(false, $USER->GetGroups()))
 {
 
